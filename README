@@ -1,2 +1,2 @@
-This buildpack is meant to be used before https://github.com/heroku/heroku-buildpack-static.git
+This buildpack is meant to be used before https://github.com/dokku/buildpack-nginx.git
 in applications bootsrapped with create-react-app with a default Storybook install
