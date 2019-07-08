@@ -8,12 +8,12 @@ BP_DIR=`cd $(dirname $0); cd ..; pwd`
 cd $BUILD_DIR
 
 # Set the web root to the build/ directory
-if [ -f "static.json" ]
+if [ -f ".static" ]
 then
-  echo '       Overwriting existing `static.json`'
+  echo 'Overwriting existing `.static`'
 fi
 
-echo '{ "root": "storybook-static/" }' > static.json
+touch .static
 
 export PATH="$BUILD_DIR/.heroku/node/bin:$BUILD_DIR/.heroku/yarn/bin":$PATH
 
