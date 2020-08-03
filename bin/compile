@@ -17,4 +17,4 @@ touch .static
 
 export PATH="$BUILD_DIR/.heroku/node/bin:$BUILD_DIR/.heroku/yarn/bin":$PATH
 
-npm run storybook:build
+npm run install && npm run storybook:build
